@@ -1,2 +1,1 @@
-# kobayt-mognn
-cafe
+Kobayt Mognnno
