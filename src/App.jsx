@@ -1,10 +1,11 @@
 import './App.css'
+import HeaderHero from './components/HeaderHero'
 
 function App() {
 
   return (
     <>
-      <h1>Kobayt Mognn</h1>
+      <HeaderHero/>
     </>
   )
 }
