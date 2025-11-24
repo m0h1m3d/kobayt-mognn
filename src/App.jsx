@@ -1,11 +1,13 @@
 import './App.css'
-import HeaderHero from './components/HeaderHero'
+import Features from './components/Features/Features'
+import HeaderHero from './components/HeaderHero/HeaderHero'
 
 function App() {
 
   return (
     <>
       <HeaderHero/>
+      <Features/>
     </>
   )
 }
