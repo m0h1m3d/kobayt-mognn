@@ -1,6 +1,7 @@
 import './App.css'
 import Features from './components/Features/Features'
 import HeaderHero from './components/HeaderHero/HeaderHero'
+import Special from './components/Special/Special'
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <HeaderHero/>
       <Features/>
+      <Special />
     </>
   )
 }

@@ -4,7 +4,7 @@ import coffee from '../../assets/coffee.svg';
 import medal from '../../assets/medal.svg';
 import bean from '../../assets/bean.svg';
 import bag from '../../assets/bag.svg';
-import shake from '../../assets/shake.jpg';
+import wait from '../../assets/wait.jpg';
 
 import Button from '../Button';
 
@@ -20,7 +20,7 @@ function Features() {
             <Card icon={bag} feature={'Proper Roasting'} description={description}/>
         </div>
         <div className="house">
-            <img src={shake} height='300' alt="logo" />
+            <img src={wait} height='300' alt="logo" />
             <div className="house-description">
                 <h2>Best Drinks House In Your Home Town</h2>
                 <p> 
