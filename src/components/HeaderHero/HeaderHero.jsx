@@ -16,7 +16,7 @@ function HeaderHero() {
   };
 
   return (
-    <div className="container">
+    <div className="container" id="home">
       <div className="overlay" onClick={()=>toggleMenu()}></div>
     <header>
       <nav>
@@ -29,10 +29,10 @@ function HeaderHero() {
             <img src={closeSvg} alt="close menu" />
           </button>
           <div className="list">
-          <li>Home</li>
-          <li>About</li>
-          <li>Menu</li>
-          <li>News</li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#news">News</a></li>
           </div>
         </ul>
       </nav>

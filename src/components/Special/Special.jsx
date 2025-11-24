@@ -6,7 +6,7 @@ import cros from "../../assets/cros.jpg";
 
 function Special() {
   return (
-    <div className="special">
+    <div className="special" id="menu">
       <h1>Our Special Drinks</h1>
       <div className="special-slider">
         <Item

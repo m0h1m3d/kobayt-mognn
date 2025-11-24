@@ -1,5 +1,5 @@
 .special {
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -7,7 +7,7 @@
   align-items: center;
 
   .special-slider {
-    width: 100%;
+    width: 90%;
     height: 90%;
     display: flex;
     justify-content: center;
@@ -20,7 +20,7 @@
 
     .item {
       height: 100%;
-      width: 28%;
+      width: 31%;
       padding: 15px;
       display: flex;
       flex-direction: column;

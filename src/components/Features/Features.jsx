@@ -13,7 +13,7 @@ function Features() {
 
     return (
         <>
-        <div className="features">
+        <div className="features" id='about'>
             <Card icon={coffee} feature={'Awesome Aroma'} description={description}/>
             <Card icon={medal} feature={'High Quality'} description={description}/>
             <Card icon={bean} feature={'Pure Grades'} description={description}/>
