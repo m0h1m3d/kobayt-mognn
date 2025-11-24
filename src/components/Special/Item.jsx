@@ -3,7 +3,7 @@ import Button from "../Button"
 function Item({img,name,desc,price}) {
     return (
         <div className="item">
-            <img src={img} height='400' alt={name} />
+            <img src={img} alt={name} />
             <h3>{name}</h3>
             <p>{desc}</p>
             <span className="price">

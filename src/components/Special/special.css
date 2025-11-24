@@ -1,11 +1,10 @@
 .special {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: red; */
 
   .special-slider {
     width: 100%;
@@ -15,28 +14,34 @@
     align-items: center;
     gap: 30px;
 
-    .price{
-        font-weight: 700;
+    .price {
+      font-weight: 700;
     }
 
-    img {
+    .item {
+      height: 100%;
+      width: 28%;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       border-radius: 10px;
-    }
+      background-color: #2c1e1c;
 
-    .item{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+      img {
         border-radius: 10px;
-
-    h3,img{
+        height: 400px;
+        }
+      
+      h3,
+      img {
         align-self: center;
-    }
+      }
     }
 
     .price {
-        width: 100%;
+      width: 100%;
       display: flex;
       justify-content: space-around;
       align-items: center;
@@ -50,10 +55,12 @@
     .special-slider {
       flex-direction: column;
       height: auto;
+      gap: 0px;
 
       .item {
         width: 80%;
         height: 100vh;
+        background-color: transparent;
       }
     }
   }
