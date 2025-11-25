@@ -15,7 +15,7 @@ function Button({ desc, className }) {
 
   return (
     <button
-      className={`button-unique-kobayt ${className ? className : ""}`}
+      className={`button ${className ? className : ""}`}
       ref={btnRef}
       onClick={() => handleBtnClick()}
     >
