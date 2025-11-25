@@ -98,8 +98,7 @@ ul li {
   flex-direction: column;
 }
 
-.hero h1, .hero p , .hero button{
-  /* opacity: 0; */
+.hero h1, .hero p{
   transition: all 0.3s ease-in-out;
 }
 
