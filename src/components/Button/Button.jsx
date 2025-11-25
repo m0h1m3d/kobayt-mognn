@@ -14,7 +14,11 @@ function Button({ desc, className }) {
   }
 
   return (
-    <button className={`button ${className ? className: ''}`} ref={btnRef} onClick={() => handleBtnClick()}>
+    <button
+      className={`button-unique-kobayt ${className ? className : ""}`}
+      ref={btnRef}
+      onClick={() => handleBtnClick()}
+    >
       {desc}
     </button>
   );
