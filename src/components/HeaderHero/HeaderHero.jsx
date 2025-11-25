@@ -1,7 +1,7 @@
 import "./header.css";
 import menuSvg from "../../assets/menu.svg";
 import closeSvg from "../../assets/close.svg";
-import Button from "../Button";
+import Button from "../Button/Button.jsx";
 import { useEffect } from "react";
 
 function HeaderHero() {

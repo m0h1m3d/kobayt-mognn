@@ -6,7 +6,7 @@ import bean from "../../assets/bean.svg";
 import bag from "../../assets/bag.svg";
 import wait from "../../assets/wait.jpg";
 
-import Button from "../Button";
+import Button from "../Button/Button.jsx";
 import { useEffect } from "react";
 
 function Features() {

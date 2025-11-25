@@ -1,4 +1,4 @@
-import Button from "../Button"
+import Button from "../Button/Button.jsx";
 
 function Item({img,name,desc,price, newClass}) {
     return (
