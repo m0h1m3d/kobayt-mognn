@@ -1,5 +1,4 @@
 import "./header.css";
-import "../Button/Button.css";
 import menuSvg from "../../assets/menu.svg";
 import closeSvg from "../../assets/close.svg";
 import Button from "../Button/Button.jsx";
@@ -13,16 +12,17 @@ function HeaderHero() {
     const btn = document.querySelector(".hero").querySelector('button');
 
     setTimeout(() => {
-      heading.style.opacity = "1";
+      heading.classList.remove('hide');
     }, 300);
 
     setTimeout(() => {
-      par.style.opacity = "1";
+      par.classList.remove('hide');
     }, 500);
-
+    
     setTimeout(() => {
-      btn.style.opacity = "1";
+      btn.classList.remove('hide');
     }, 700);
+
   },[])
 
   function toggleMenu() {
@@ -69,11 +69,11 @@ function HeaderHero() {
         </nav>
       </header>
       <div className="hero">
-        <h1>
+        <h1 className="hide">
           <span>Good Coffee </span>Will Always Find The Audience
         </h1>
-        <p>We provide a vareity of unique and delicious drinks!</p>
-        <Button desc={"Learn More"} />
+        <p className="hide">We provide a vareity of unique and delicious drinks!</p>
+        <Button className='hide' desc={"Learn More"} />
       </div>
     </div>
   );

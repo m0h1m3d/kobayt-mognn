@@ -10,7 +10,6 @@ function FollowUs() {
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        console.log(entry.target)
         if (entry.isIntersecting) {
           entry.target.classList.add("show");
         } else {

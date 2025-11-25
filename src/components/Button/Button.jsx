@@ -1,7 +1,7 @@
-import "./Button.css";
 import { useRef } from "react";
+import "./Button.css";
 
-function Button({ desc }) {
+function Button({ desc, className }) {
   const btnRef = useRef(null);
 
   function handleBtnClick() {
@@ -14,7 +14,7 @@ function Button({ desc }) {
   }
 
   return (
-    <button ref={btnRef} onClick={() => handleBtnClick()}>
+    <button className={className} ref={btnRef} onClick={() => handleBtnClick()}>
       {desc}
     </button>
   );
