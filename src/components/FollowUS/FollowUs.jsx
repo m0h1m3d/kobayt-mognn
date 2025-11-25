@@ -2,8 +2,31 @@ import "./FollowUs.css";
 import ig from "../../assets/ig.jpg";
 import fb from "../../assets/fb.jpg";
 import tk from "../../assets/tk.jpg";
+import { useEffect } from "react";
 
 function FollowUs() {
+  useEffect(() => {
+    const links = document.querySelectorAll(".links a");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        console.log(entry.target)
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        } else {
+          entry.target.classList.remove("show");
+        }
+      }),
+        { threshold: 0.3 };
+    });
+
+    links.forEach((link) => observer.observe(link));
+
+    return () => {
+      links.forEach((link) => observer.unobserve(link));
+    };
+  }, []);
+
   return (
     <div className="follow" id="news">
       <h1>Follow Us!</h1>
