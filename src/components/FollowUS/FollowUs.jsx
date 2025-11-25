@@ -1,4 +1,4 @@
-import "./followUs.css";
+import "./followus.css";
 import ig from "../../assets/ig.jpg";
 import fb from "../../assets/fb.jpg";
 import tk from "../../assets/tk.jpg";
