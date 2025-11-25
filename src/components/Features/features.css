@@ -13,18 +13,26 @@
 }
 
 .house {
+  position: relative;
   width: 100%;
   min-height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
+  overflow: hidden;
 
   img{
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
     border-radius: 10px;
 }
 
   .house-description {
+    transform: translateX(179px);
+    opacity : 0;
+    transition: all 0.5s ease-in-out;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -45,6 +53,12 @@
     transform: translateY(0);
     opacity : 1;
 }
+
+.house-description.show, .house img.show{
+    transform: translateX(0);
+    opacity: 1;
+}
+
 
 @media (max-width: 768px) {
   .features {

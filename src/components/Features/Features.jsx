@@ -15,25 +15,46 @@ function Features() {
 
   useEffect(() => {
     const cards = document.querySelectorAll(".card");
-
+    
     const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                } else {
+                    entry.target.classList.remove("show");
+                    // return;
+                }
+            });
+        },
+        { threshold: 0.3 }
+    );
+    cards.forEach((card) => observer.observe(card));
+    
+    
+    const houseImg = document.querySelector(".house img");
+    const houseDesc = document.querySelector(".house-description");
+    const observerHouse = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
+            console.log(entry.target,entry.isIntersecting)
           if (entry.isIntersecting) {
             entry.target.classList.add("show");
           } else {
-            // entry.target.classList.remove("show");
-            return;
+            entry.target.classList.remove("show");
+            // return;
           }
         });
       },
       { threshold: 0.3 }
     );
+    observerHouse.observe(houseImg);
+    observerHouse.observe(houseDesc);
 
-    cards.forEach((card) => observer.observe(card));
 
     return () => {
       cards.forEach((card) => observer.unobserve(card));
+      observerHouse.unobserve(houseImg);
     };
   }, []);
 
