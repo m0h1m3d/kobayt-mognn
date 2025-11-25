@@ -37,7 +37,6 @@ function Features() {
     const observerHouse = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-            console.log(entry.target,entry.isIntersecting)
           if (entry.isIntersecting) {
             entry.target.classList.add("show");
           } else {
