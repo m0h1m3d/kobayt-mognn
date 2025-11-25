@@ -1,5 +1,4 @@
-.btn {
-  position: relative;
+button {
   padding: 0.8rem 1.6rem;
   font-size: 1rem;
   font-weight: 700;
@@ -10,7 +9,7 @@
   cursor: pointer;
 }
 
-.btn:hover {
+button:hover {
   background-color: #cf2a0f;
   transition: all 0.3s;
   scale: 0.9;

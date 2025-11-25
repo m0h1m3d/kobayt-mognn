@@ -14,7 +14,7 @@ function Button({ desc }) {
   }
 
   return (
-    <button className="btn" ref={btnRef} onClick={() => handleBtnClick()}>
+    <button ref={btnRef} onClick={() => handleBtnClick()}>
       {desc}
     </button>
   );
