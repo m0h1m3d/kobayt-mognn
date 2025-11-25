@@ -1,4 +1,5 @@
 import "./header.css";
+import "../Button/Button.css";
 import menuSvg from "../../assets/menu.svg";
 import closeSvg from "../../assets/close.svg";
 import Button from "../Button/Button.jsx";
