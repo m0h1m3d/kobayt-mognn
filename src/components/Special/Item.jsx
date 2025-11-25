@@ -1,4 +1,5 @@
 import Button from "../Button/Button.jsx";
+import '../Button/Button.css';
 
 function Item({img,name,desc,price, newClass}) {
     return (
