@@ -41,6 +41,22 @@
       img {
         align-self: center;
       }
+
+      .item-btn {
+        align-self: center;
+        padding: 0.8rem 1.6rem;
+        font-weight: 700;
+        color: white;
+        background-color: #410e05;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        &:hover {
+          scale: 0.9;
+        }
+      }
     }
 
     .show {

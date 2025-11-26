@@ -5,9 +5,9 @@
   justify-content: center;
   align-items: center;
 
-  .card{
+  .card {
     transform: translateY(100px);
-    opacity : 0;
+    opacity: 0;
     transition: all 0.5s ease-in-out;
   }
 }
@@ -22,16 +22,16 @@
   gap: 30px;
   overflow: hidden;
 
-  img{
+  img {
     transform: translateX(-150px);
     opacity: 0;
     transition: all 0.5s ease-in-out;
     border-radius: 10px;
-}
+  }
 
   .house-description {
     transform: translateX(179px);
-    opacity : 0;
+    opacity: 0;
     transition: all 0.5s ease-in-out;
     width: 50%;
     display: flex;
@@ -39,26 +39,38 @@
     justify-content: center;
     align-items: flex-start;
 
-    p{
-        font-style: italic;
+    p {
+      font-style: italic;
     }
 
-    .btn{
-        align-self: center;
+    .house-btn {
+      align-self: center;
+      padding: 0.8rem 1.6rem;
+      font-weight: 700;
+      color: white;
+      background-color: #5f1508;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &:hover {
+        scale: 0.9;
+      }
     }
   }
 }
 
-.card.show{
-    transform: translateY(0);
-    opacity : 1;
+.card.show {
+  transform: translateY(0);
+  opacity: 1;
 }
 
-.house-description.show, .house img.show{
-    transform: translateX(0);
-    opacity: 1;
+.house-description.show,
+.house img.show {
+  transform: translateX(0);
+  opacity: 1;
 }
-
 
 @media (max-width: 768px) {
   .features {
@@ -67,25 +79,25 @@
     padding: 20px 0;
     gap: 20px;
 
-    .card{
-        width: 80%;
+    .card {
+      width: 80%;
     }
   }
 
-  .house{
+  .house {
     flex-direction: column;
     height: auto;
 
     .house-description {
-        width: 100%;
+      width: 100%;
 
-        h2{
-            text-align: center;
-        }
-        p{
-            text-align: center;
-            font-size: 0.8rem;
-        }
+      h2 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+        font-size: 0.8rem;
+      }
     }
   }
 }

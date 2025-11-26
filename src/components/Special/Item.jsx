@@ -1,4 +1,4 @@
-// import Button from "../Button/Button.jsx";
+import { handleBtnClick } from "../../helper/buttonEffect";
 
 function Item({img,name,desc,price, newClass}) {
     return (
@@ -8,10 +8,16 @@ function Item({img,name,desc,price, newClass}) {
             <p>{desc}</p>
             <span className="price">
                 ${price}
-                {/* <Button desc="Order Now" /> */}
+                <Button onClick={e => handleBtnClick(e)}/>
                 </span>
         </div>
     )
+}
+
+function Button({onClick}){
+  return <button onClick={onClick} className={`item-btn`}>
+    Order Now
+  </button>
 }
 
 export default Item

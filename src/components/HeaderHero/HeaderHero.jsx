@@ -1,7 +1,6 @@
 import "./header.css";
 import menuSvg from "../../assets/menu.svg";
 import closeSvg from "../../assets/close.svg";
-// import Button from "../Button/Button.jsx";
 import { useEffect } from "react";
 import { handleBtnClick } from "../../helper/buttonEffect";
 
@@ -10,7 +9,6 @@ function HeaderHero() {
   useEffect(()=>{
     const heading = document.querySelector(".hero").querySelector('h1');
     const par = document.querySelector(".hero").querySelector('p');
-    // const btn = document.querySelector(".hero").querySelector('button');
     const btn = document.querySelector(".hero-btn");
 
     setTimeout(() => {
@@ -75,7 +73,6 @@ function HeaderHero() {
           <span>Good Coffee </span>Will Always Find The Audience
         </h1>
         <p className="hide">We provide a vareity of unique and delicious drinks!</p>
-        {/* <Button className='hide' desc={"Learn More"} /> */}
         <button onClick={(e)=>handleBtnClick(e)} className="hero-btn hide">Learn More</button>
       </div>
     </div>
