@@ -7,52 +7,50 @@
   justify-content: space-evenly;
   align-items: center;
   border-radius: 40px;
-  background-image: url('../../assets/follow.jpg');
+  background-image: url("../../assets/follow.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  
-  h1{
-        font-size: 3rem;
+}
 
-  }
+.follow h1 {
+  font-size: 3rem;
+}
 
-  .links {
-    height: 40%;
-    width: 50%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    overflow: hidden;
+.links {
+  height: 40%;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+}
 
+.links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  color: blanchedalmond;
+  transform: translateX(100px);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
 
-    a{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        text-decoration: none;
-        font-weight: 700;
-        color: blanchedalmond;
-        transform: translateX(100px);
-        opacity: 0;
-        transition: all 0.3s ease-in-out;
-
-        img{
-            height: 40px;
-            width: 40px;
-            border-radius: 10px;
-        }
-    }
-  }
+.links a img {
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
 }
 
 .links a.show {
-    transform: translateX(0);
-    opacity: 1;
+  transform: translateX(0);
+  opacity: 1;
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .follow {
     position: relative;
     flex-direction: column;
