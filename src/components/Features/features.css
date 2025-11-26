@@ -4,12 +4,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
-  .card {
-    transform: translateY(100px);
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
-  }
+.card {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
 }
 
 .house {
@@ -21,44 +21,43 @@
   align-items: center;
   gap: 30px;
   overflow: hidden;
+}
 
-  img {
-    transform: translateX(-150px);
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
-    border-radius: 10px;
-  }
+.house img {
+  transform: translateX(-150px);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  border-radius: 10px;
+}
 
-  .house-description {
-    transform: translateX(179px);
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+.house-description {
+  transform: translateX(179px);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
 
-    p {
-      font-style: italic;
-    }
+.house-description p {
+  font-style: italic;
+}
 
-    .house-btn {
-      align-self: center;
-      padding: 0.8rem 1.6rem;
-      font-weight: 700;
-      color: white;
-      background-color: #5f1508;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: all 0.3s;
-
-      &:hover {
-        scale: 0.9;
-      }
-    }
-  }
+.house-btn {
+  align-self: center;
+  padding: 0.8rem 1.6rem;
+  font-weight: 700;
+  color: white;
+  background-color: #5f1508;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.house-btn:hover {
+  scale: 0.9;
 }
 
 .card.show {
@@ -78,26 +77,24 @@
     height: auto;
     padding: 20px 0;
     gap: 20px;
-
-    .card {
-      width: 80%;
-    }
+  }
+  .card {
+    width: 80%;
   }
 
   .house {
     flex-direction: column;
     height: auto;
+  }
 
-    .house-description {
-      width: 100%;
-
-      h2 {
-        text-align: center;
-      }
-      p {
-        text-align: center;
-        font-size: 0.8rem;
-      }
-    }
+  .house-description {
+    width: 100%;
+  }
+  .house-description h2 {
+    text-align: center;
+  }
+  .house-description p {
+    text-align: center;
+    font-size: 0.8rem;
   }
 }

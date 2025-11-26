@@ -6,18 +6,16 @@
   border-top: 2px solid white;
   display: flex;
   justify-content: center;
-
-  .location,
-  .contact,
-  .about {
-    width: 50%;
-    padding: 20px;
-
-    p {
-      font-style: italic;
-    }
-  }
+  font-style: italic;
 }
+
+.location,
+.contact,
+.about {
+  width: 50%;
+  padding: 20px;
+}
+
 .rights {
   text-align: center;
   margin-top: 20px;
@@ -28,12 +26,11 @@
   .footer {
     flex-direction: column;
     align-items: center;
-
-    .location,
-    .contact,
-    .about {
-      width: 100%;
-      text-align: center;
-    }
+  }
+  .location,
+  .contact,
+  .about {
+    width: 100%;
+    text-align: center;
   }
 }

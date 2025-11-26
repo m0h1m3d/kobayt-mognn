@@ -1,18 +1,18 @@
-.card{  
-    padding: 20px;
-    background-color: #2C1E1C;  
-    border-radius: 10px;  
-    display: flex;  
-    flex-direction: column;  
-    justify-content: center;  
-    align-items: center;  
-    margin: 0 15px;  
+.card {
+  padding: 20px;
+  background-color: #2c1e1c;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px;
+}
 
-    & p {
-        text-align: center;
-        font-style: italic;
-        color: #BBBBBB;
-        font-size: 14px;
-        margin-top: 10px;
-    }
-};
+.card p {
+  text-align: center;
+  font-style: italic;
+  color: #bbbbbb;
+  font-size: 14px;
+  margin-top: 10px;
+}
