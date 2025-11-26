@@ -27,7 +27,7 @@ function FollowUs() {
   }, []);
 
   return (
-    <div className="follow" id="news">
+    <div className="follow f-container" id="news">
       <h1>Follow Us!</h1>
       <div className="links">
         <a href="https://www.instagram.com/kopayt.mognn/" target="blank">
