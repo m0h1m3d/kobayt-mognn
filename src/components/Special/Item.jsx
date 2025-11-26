@@ -16,7 +16,7 @@ function Item({ img, name, desc, price, newClass }) {
 
 function Button({ onClick }) {
   return (
-    <a href="tel:0900007609">
+    <a href="tel:+249900007609">
       <button onClick={onClick} className={`item-btn`}>
         Call Now
       </button>
