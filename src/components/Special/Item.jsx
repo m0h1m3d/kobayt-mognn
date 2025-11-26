@@ -1,4 +1,4 @@
-import Button from "../Button/Button.jsx";
+// import Button from "../Button/Button.jsx";
 
 function Item({img,name,desc,price, newClass}) {
     return (
@@ -8,7 +8,7 @@ function Item({img,name,desc,price, newClass}) {
             <p>{desc}</p>
             <span className="price">
                 ${price}
-                <Button desc="Order Now" />
+                {/* <Button desc="Order Now" /> */}
                 </span>
         </div>
     )

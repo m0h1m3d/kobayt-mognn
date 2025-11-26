@@ -6,7 +6,7 @@ import bean from "../../assets/bean.svg";
 import bag from "../../assets/bag.svg";
 import wait from "../../assets/wait.jpg";
 
-import Button from "../Button/Button.jsx";
+// import Button from "../Button/Button.jsx";
 import { useEffect } from "react";
 
 function Features() {
@@ -83,7 +83,7 @@ function Features() {
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
           </p>
-          <Button className="btn" desc={"Read More"} />
+          {/* <Button className="btn" desc={"Read More"} /> */}
         </div>
       </div>
     </>
